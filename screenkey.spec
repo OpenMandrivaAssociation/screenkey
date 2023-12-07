@@ -15,6 +15,14 @@ BuildRequires:	python3dist(setuptools)
 #BuildRequires:	python3dist(setuptools-git)
 BuildRequires:	python3dist(babel)
 
+Requires:   python-cairo
+Requires:   python-dbus
+Requires:   python-gi
+Requires:   python-gobject3
+Requires:   %{_lib}gtk3_0
+Requires:   typelib(AyatanaAppIndicator3)
+Recommends: fonts-otf-awesome
+Recommends: fonts-ttf-awesome
 Recommends:	slop
 
 %description
