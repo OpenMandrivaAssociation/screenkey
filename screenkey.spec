@@ -10,9 +10,9 @@ Patch1:		0001-Port-to-Ayatana-AppIndicator.patch
 BuildArch:	noarch
 BuildRequires:	gettext
 BuildRequires:	intltool
-BuildRequires:	pkgconfig(python3)
+BuildRequires:	pkgconfig(python)
 BuildRequires:	python3dist(setuptools)
-BuildRequires:	python3dist(setuptools-git)
+#BuildRequires:	python3dist(setuptools-git)
 BuildRequires:	python3dist(babel)
 
 Recommends:	slop
@@ -31,10 +31,10 @@ sed -i 's/^Categories=.*/Categories=AudioVideo;Video;Recorder;/' data/screenkey.
 sed -i '/^Version=/d' data/screenkey.desktop
 
 %build
-%py3_build
+%py_build
 
 %install
-%py3_install
+%py_install
 
 %find_lang %{name}
 
@@ -43,8 +43,8 @@ sed -i '/^Version=/d' data/screenkey.desktop
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/org.thregr.%{name}.metainfo.xml
-%dir %{python3_sitelib}/Screenkey/
-%{python3_sitelib}/Screenkey/__pycache__/
-%{python3_sitelib}/Screenkey/images/
-%{python3_sitelib}/Screenkey/*.py*
-%{python3_sitelib}/%{name}-%{version}-py%{python3_version}.egg-info
+%dir %{python_sitelib}/Screenkey/
+%{python_sitelib}/Screenkey/__pycache__/
+%{python_sitelib}/Screenkey/images/
+%{python_sitelib}/Screenkey/*.py*
+%{python_sitelib}/%{name}-%{version}-py%{python_version}.egg-info
