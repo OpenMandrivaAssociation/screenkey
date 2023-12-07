@@ -44,7 +44,7 @@ sed -i '/^Version=/d' data/screenkey.desktop
 %{_datadir}/applications/%{name}.desktop
 %{_metainfodir}/org.thregr.%{name}.metainfo.xml
 %dir %{python_sitelib}/Screenkey/
-%{python_sitelib}/Screenkey/__pycache__/
+#{python_sitelib}/Screenkey/__pycache__/
 %{python_sitelib}/Screenkey/images/
 %{python_sitelib}/Screenkey/*.py*
 %{python_sitelib}/%{name}-%{version}-py%{python_version}.egg-info
