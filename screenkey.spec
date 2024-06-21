@@ -1,6 +1,6 @@
 Name:		screenkey
 Version:	1.5
-Release:	1
+Release:	2
 Summary:	A screen-cast tool to show your keys and based on key-mon project
 Group:		Video/Utilities
 License:	GPLv2+
