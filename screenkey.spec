@@ -1,6 +1,6 @@
 Name:		screenkey
 Version:	1.5
-Release:	2
+Release:	3
 Summary:	A screen-cast tool to show your keys and based on key-mon project
 Group:		Video/Utilities
 License:	GPLv2+
@@ -11,9 +11,9 @@ BuildArch:	noarch
 BuildRequires:	gettext
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(python)
-BuildRequires:	python3dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools)
 #BuildRequires:	python3dist(setuptools-git)
-BuildRequires:	python3dist(babel)
+BuildRequires:	python%{pyver}dist(babel)
 
 Requires:   python-cairo
 Requires:   python-dbus
