@@ -1,6 +1,6 @@
 Name:		screenkey
 Version:	1.5
-Release:	3
+Release:	4
 Summary:	A screen-cast tool to show your keys and based on key-mon project
 Group:		Video/Utilities
 License:	GPLv2+
@@ -10,7 +10,7 @@ Patch1:		0001-Port-to-Ayatana-AppIndicator.patch
 BuildArch:	noarch
 BuildRequires:	gettext
 BuildRequires:	intltool
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(setuptools)
 #BuildRequires:	python3dist(setuptools-git)
 BuildRequires:	python%{pyver}dist(babel)
